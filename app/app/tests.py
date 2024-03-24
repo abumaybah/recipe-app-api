@@ -20,3 +20,9 @@ class CalcTests(SimpleTestCase):
         res = calc.subtract(10, 15)
 
         self.assertEqual(res, -5)
+
+    def test_fib_numbers(self):
+        """Test fibonacci sequence."""
+        res = calc.fib_numbers(8)
+
+        self.assertEqual(res, 21)
